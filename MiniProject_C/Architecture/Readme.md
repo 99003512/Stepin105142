@@ -1,3 +1,3 @@
-##  Tools Used
+## Tools Used
 
-*    LucidCharts
+*   LucidCharts
