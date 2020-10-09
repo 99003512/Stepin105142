@@ -41,7 +41,7 @@ printf("This box is filled!\n");
 goto start;
 }
 printf("\n");
-} while (move >= 9 || move < 0 && board[move] == 0);
+} while (move >= 9 && board[move] == 0);
 return move;
 }
 }
