@@ -20,6 +20,8 @@ INC	= -Iinc
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
+DOCUMENTATION_OUTPUT = documentation/html
+
 $(PROJECT_NAME):all
 
 .PHONY: run clean test  doc all
@@ -29,6 +31,10 @@ all: $(SRC) $(BUILD)
   
 run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT).out
+	
+doc:
+	make -C ./documentation
+
 
 test:$(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
@@ -36,7 +42,7 @@ test:$(BUILD)
   
   
 clean:
-	rm -rf $(BUILD)
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
   
   
  $(BUILD):
