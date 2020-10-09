@@ -27,7 +27,7 @@ int move = 0;
 if(b==3){           //for test purpose start
     move = 3;
     if(board[move] != 0){
-   int n = printf("This box is filled!\n");
+    printf("This box is filled!\n");
     return 'This box is filled!';
     }
 }                   // test stop
