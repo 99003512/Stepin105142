@@ -18,17 +18,17 @@ int Check_state(int board, int p){
 
 switch(winn(board, p)) {
         case 0:
-            printf("It's a Draw\n");
-            return 'It\'s a Draw\n';
+            printf("Its a Draw/n");
+            return 'Its a Draw';
             break;
         case 1:
             Draw_board(board);
-            printf("User lose, computer wins!!\n");
-            return 'User lose, computer wins!!\n';
+            printf("User lose, computer wins!!/n");
+            return 'User lose, computer wins!!';
             break;
         case -1:
-            printf("User Wins!!\n");
-            return 'User Wins!!\n';
+            printf("User Wins!!/n");
+            return 'User Wins!!';
             break;
     }
     }
