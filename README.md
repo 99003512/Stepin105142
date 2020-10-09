@@ -8,8 +8,8 @@ The Tic-Tac-Toe game is a two player game where each player has their own tokens
 
 The goal of the user is to get a Three in a row before the computer inputs do at:
 
-*   Any of the horizontal rows
-*   Any of the vertical rows
-*   Any of the diagonal rows
+ *   Any of the horizontal rows
+ *   Any of the vertical rows
+ *   Any of the diagonal rows
 
 The user would be prompted with a message depicting whether the user won, lost or the match be a draw.
