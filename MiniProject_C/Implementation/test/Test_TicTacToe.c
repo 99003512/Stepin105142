@@ -82,17 +82,17 @@ void test_botresponse_horizontal(void){
 
 void test_win_state(void){
     int i[9] = {0,0,0,1,1,1,0,0,0};
-    CU_ASSERT('User Wins!!\n' == Check_state(i, -1));
+    CU_ASSERT('User Wins!!' == Check_state(i, -1));
 }
 
 void test_lose_state(void){
     int i[9] = {0,0,0,1,1,1,0,0,0};
-     CU_ASSERT('User lose, computer wins!!\n' == Check_state(i, 1));
+     CU_ASSERT('User lose, computer wins!!' == Check_state(i, 1));
 }
 
 void test_draw_state(void){
     int i[9] = {1,1,-1,-1,1,1,1,-1,-1};
-    CU_ASSERT('It\'s a Draw\n' == Check_state(i,1));
+    CU_ASSERT('Its a Draw' == Check_state(i,1));
 }
 
 
