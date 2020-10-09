@@ -14,7 +14,7 @@ int main() {
     int player=0;
     int p=0;
     int p2=0;
-     int r=0;
+     
     scanf("%d",&player);
     if(player == 1){
         p=1;
@@ -28,11 +28,13 @@ int main() {
     unsigned turn;
     for(turn = 0; turn < 9 && win(board) == 0; ++turn) {
         if((turn+player) % 2 == 0){
+            int r=0;
             r = Bot(board, p);
             board[r] = p;
         }
         else {
             Draw_board(board);
+            int r=0;
 
             r = user_input(board, p2);
 
