@@ -47,8 +47,53 @@ if (CUE_SUCCESS != CU_initialize_registry())
     return 0;
 }
 
-  void test_Token_X(void){
+void test_Token_X(void){
   CU_ASSERT('X' == Token(-1));
   }
   
+void test_Token_O(void){
+  CU_ASSERT('O' == Token(1));
+    }
+
+void test_Draw_board(void){
+    int i[9] = {0,0,0,-1,0,0,0,0,0};
+     CU_ASSERT('X' == Draw_board(i));
+}
+
+void test_samespot_input(void){
+    int i[9] = {0,0,0,3,0,0,0,0,0};
+     CU_ASSERT('This box is filled!' == user_input(i, 3));
+}
+
+void test_botresponse_diagonal(void){
+     int i[9] = {0,0,0,0,-1,0,0,0,-1};
+    CU_ASSERT(0 == Bot(i, 1));
+}
+
+void test_botresponse_vertical(void){
+    int i[9] = {1,-1,0,0,0,0,0,-1,0};
+     CU_ASSERT(4 == Bot(i, 1));
+}
+
+void test_botresponse_horizontal(void){
+    int i[9] = {1,0,0,0,0,0,0,-1,-1};
+    CU_ASSERT(6 == Bot(i, 1));
+}
+
+void test_win_state(void){
+    int i[9] = {0,0,0,1,1,1,0,0,0};
+    CU_ASSERT('User Wins!!\n' == Check_state(i, -1));
+}
+
+void test_lose_state(void){
+    int i[9] = {0,0,0,1,1,1,0,0,0};
+     CU_ASSERT('User lose, computer wins!!\n' == Check_state(i, 1));
+}
+
+void test_draw_state(void){
+    int i[9] = {1,1,-1,-1,1,1,1,-1,-1};
+    CU_ASSERT('It\'s a Draw\n' == Check_state(i,1));
+}
+
+
   
