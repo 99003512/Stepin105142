@@ -14,7 +14,7 @@ int winn( int board[9], int p) {
     return 0;
 }
 
-int Check_state(int board[9], int p){
+int Check_state(int board, int p){
 
 switch(winn(board, p)) {
         case 0:
