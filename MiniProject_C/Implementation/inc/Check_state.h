@@ -7,5 +7,5 @@
 int winn(int board[9], int p);
 
 int Check_state(int board[9], int p);
-
+   
 #endif // __CHECK_STATE__
