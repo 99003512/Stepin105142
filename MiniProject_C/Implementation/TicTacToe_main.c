@@ -1,5 +1,5 @@
 //Just cd to implementaion folder and "make run" to play.
-//Ignore the warnings shown, those are just the warnings for too much words returning from the function, which is only used for test purposes, not a part of the actual program.
+//Ignore the warnings shown (they are not errors, the program will work fine), those are just the warnings for too much words returning from the function, which is only used for test purposes, not a part of the actual program.
 
 
 
