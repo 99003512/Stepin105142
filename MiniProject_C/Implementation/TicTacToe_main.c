@@ -1,3 +1,8 @@
+//Just cd to implementaion folder and "make run" to play.
+
+
+
+
 #include<stdio.h>
 #include<Best_score.h>
 #include<Check_state.h>
