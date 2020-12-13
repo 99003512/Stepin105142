@@ -1,4 +1,5 @@
 #include<Check_state.h>
+#include<string>
 
 
 int winn( int board[9], int p) {
@@ -15,11 +16,16 @@ int winn( int board[9], int p) {
 }
 
 int Check_state(int board[9], int p){
+    
+    string n1;
+    string n2;
+    string n3;
 
 switch(winn(board, p)) {
         case 0:
             printf("Its a Draw");
-            return 'Its a Draw';
+            n1 = "Its a Draw";
+            return n1;
             break;
         case 1:
             Draw_board(board);
